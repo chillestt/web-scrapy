@@ -18,8 +18,15 @@ then code to crawl
 -> chua cac pipeline se duoc thuc thi, co do uu tien, so cang nho thi do uu tien cang cao 
 
 # connect to mysql
+=> luu vào mysql
     -self.conn = self.connector.connect(host, user, password, database)
     self.cur = self.conn.cursor()
     self.cur.execute(cau len sql)
+
+# Fake user agent and browser headers
+- scrapeops -> signup -> login -> get api
+- set up in middlewares
+- set some variables in settings.py
+
 
 

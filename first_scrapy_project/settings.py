@@ -12,7 +12,6 @@ BOT_NAME = "first_scrapy_project"
 SPIDER_MODULES = ["first_scrapy_project.spiders"]
 NEWSPIDER_MODULE = "first_scrapy_project.spiders"
 
-
 FEEDS = {
     'data.json': {'format': 'json'}
 }
@@ -21,7 +20,7 @@ FEEDS = {
 #USER_AGENT = "first_scrapy_project (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -68,7 +67,7 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    "first_scrapy_project.pipelines.FirstScrapyProjectPipeline": 300,
-   "first_scrapy_project.pipelines.SaveToMySQLPipeline": 400,
+   #"first_scrapy_project.pipelines.SaveToMySQLPipeline": 400,
 
 }
 
